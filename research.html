@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research | CS Department</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Computer Science Department</h1>
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+      />
+      <label for="nav-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="research">
+        <h2>Research Areas</h2>
+        <div class="research-tabs">
+          <input type="radio" name="research-tab" id="tab1" checked />
+          <input type="radio" name="research-tab" id="tab2" />
+          <label for="tab1" class="tab-label">AI</label>
+          <label for="tab2" class="tab-label">Networks</label>
+          <div class="tab-content">
+            <div class="tab-pane" id="tab1-content">
+              <h3>Artificial Intelligence</h3>
+              <p>Focus on machine learning and NLP.</p>
+            </div>
+            <div class="tab-pane" id="tab2-content">
+              <h3>Networking</h3>
+              <p>Research in 5G and IoT systems.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 CS Department | Contact: csdept@university.edu</p>
+    </footer>
+  </body>
+</html>

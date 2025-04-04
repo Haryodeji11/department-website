@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | CS Department</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Computer Science Department</h1>
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+      />
+      <label for="nav-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="news-events">
+        <h2>News & Events</h2>
+        <div class="event-grid">
+          <div class="event-card upcoming">
+            <h3>AI Seminar</h3>
+            <p>Date: April 10, 2025</p>
+            <a href="#event1-modal" class="btn modal-trigger">Details</a>
+          </div>
+          <div class="event-card">
+            <h3>Blockchain Lecture</h3>
+            <p>Date: April 15, 2025</p>
+            <a href="#event2-modal" class="btn modal-trigger">Details</a>
+          </div>
+        </div>
+      </section>
+
+      <div id="event1-modal" class="modal">
+        <div class="modal-content">
+          <h3>AI Seminar</h3>
+          <p>Join us for a deep dive into AI ethics.</p>
+          <a href="#" class="btn modal-close">Close</a>
+        </div>
+      </div>
+      <div id="event2-modal" class="modal">
+        <div class="modal-content">
+          <h3>Blockchain Lecture</h3>
+          <p>Learn the basics of blockchain tech.</p>
+          <a href="#" class="btn modal-close">Close</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 CS Department | Contact: csdept@university.edu</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff | CS Department</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Computer Science Department</h1>
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+      />
+      <label for="nav-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="staff">
+        <h2>Staff Directory</h2>
+        <div class="staff-grid">
+          <div class="staff-card">
+            <div
+              class="staff-photo"
+              style="background-image: url('https://via.placeholder.com/150')"
+            ></div>
+            <h3>Dr. Alice Smith</h3>
+            <p>Professor</p>
+            <p>AI & Machine Learning</p>
+            <div class="staff-info">
+              <p>Email: alice@university.edu</p>
+              <p>Room: B-204</p>
+            </div>
+          </div>
+          <div class="staff-card">
+            <div
+              class="staff-photo"
+              style="background-image: url('https://via.placeholder.com/150')"
+            ></div>
+            <h3>Prof. Bob Jones</h3>
+            <p>Associate Professor</p>
+            <p>Networks</p>
+            <div class="staff-info">
+              <p>Email: bob@university.edu</p>
+              <p>Room: C-101</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 CS Department | Contact: csdept@university.edu</p>
+    </footer>
+  </body>
+</html>

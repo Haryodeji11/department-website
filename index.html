@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | CS Department</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Computer Science Department</h1>
+      <input
+        type="checkbox"
+        id="nav-toggle"
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+      />
+      <label for="nav-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>Welcome to CS Dept</h2>
+        <p>Explore cutting-edge education and research.</p>
+        <a href="#welcome-modal" class="btn modal-trigger">Learn More</a>
+      </section>
+
+      <section class="news-events">
+        <h2>News & Events</h2>
+        <div class="news-ticker">
+          <div class="ticker-content">
+            <p>Research Seminar: AI Ethics - April 10, 2025</p>
+            <p>Guest Lecture: Blockchain - April 15, 2025</p>
+            <p>Exam Week Starts - April 20, 2025</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="resources">
+        <h2>Student Resources</h2>
+        <div class="resource-grid">
+          <div class="resource-card">
+            <h3>Past Questions</h3>
+            <a href="#" class="btn">Download</a>
+          </div>
+          <div class="resource-card">
+            <h3>Lab Schedule</h3>
+            <a href="timetable.html" class="btn">View</a>
+          </div>
+          <div class="resource-card">
+            <h3>Project Guidelines</h3>
+            <a href="#" class="btn">Read</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h2>Student Voices</h2>
+        <div class="carousel">
+          <input type="radio" name="carousel" id="slide1" checked />
+          <input type="radio" name="carousel" id="slide2" />
+          <input type="radio" name="carousel" id="slide3" />
+          <div class="slides">
+            <div class="slide"><p>"Great faculty support!" - Jane D.</p></div>
+            <div class="slide">
+              <p>"Loved the research opportunities." - Alex K.</p>
+            </div>
+            <div class="slide"><p>"Best CS dept ever!" - Sam R.</p></div>
+          </div>
+          <label for="slide1" class="carousel-dot"></label>
+          <label for="slide2" class="carousel-dot"></label>
+          <label for="slide3" class="carousel-dot"></label>
+        </div>
+      </section>
+
+      <div id="welcome-modal" class="modal">
+        <div class="modal-content">
+          <h3>Welcome!</h3>
+          <p>This is the CS Department at its finest.</p>
+          <a href="#" class="btn modal-close">Close</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 CS Department | Contact: csdept@university.edu</p>
+    </footer>
+  </body>
+</html>
