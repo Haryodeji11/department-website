@@ -18,6 +18,13 @@ body {
     background: var(--secondary);
     color: var(--text);
     line-height: 1.6;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    display: flex;
+    flex-direction: column; /* Use flexbox to push footer down */
+}
+
+main {
+    flex-grow: 1; /* Main grows to fill remaining space, pushing footer to bottom */
 }
 
 /* Header & Navbar */
@@ -346,6 +353,12 @@ body {
     cursor: pointer;
     margin: 5px;
     border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.tab-label:hover {
+    background: var(--accent);
+    color: #fff;
 }
 
 #tab1:checked ~ .tab-content #tab1-content,
@@ -427,6 +440,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px;
+    width: 100%;
 }
 
 /* Responsive Design */
